@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xmlMessage>
+    <agentMessage>60</agentMessage>
+    <agentName>SecondMockAgent</agentName>
+    <agentType>HeartRate</agentType>
+</xmlMessage>

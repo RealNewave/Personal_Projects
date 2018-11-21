@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="arpg.classes">
+  <ClassDiagramComponents>
+    <Class name="Alchemist" package="arpg.classes" visibility="public" xPosition="1652.0" yPosition="924.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HitPoints" returnType="int" visibility="public"/>
+        <Method name="ManaPoints" returnType="int" visibility="public"/>
+        <Method name="ExperiencePoints" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AMage" package="arpg.classes" visibility="public" isAbstract="true" xPosition="1068.0" yPosition="683.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AMelee" package="arpg.classes" visibility="public" isAbstract="true" xPosition="316.0" yPosition="645.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ARanged" package="arpg.classes" visibility="public" isAbstract="true" xPosition="1846.0" yPosition="683.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Archer" package="arpg.classes" visibility="public" xPosition="1910.0" yPosition="897.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HitPoints" returnType="int" visibility="public"/>
+        <Method name="ManaPoints" returnType="int" visibility="public"/>
+        <Method name="ExperiencePoints" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ElementalMage" package="arpg.classes" visibility="public" xPosition="910.0" yPosition="1000.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HitPoints" returnType="int" visibility="public"/>
+        <Method name="ManaPoints" returnType="int" visibility="public"/>
+        <Method name="ExperiencePoints" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Knight" package="arpg.classes" visibility="public" xPosition="402.0" yPosition="1013.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HitPoints" returnType="int" visibility="public"/>
+        <Method name="ManaPoints" returnType="int" visibility="public"/>
+        <Method name="ExperiencePoints" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="LifeMage" package="arpg.classes" visibility="public" xPosition="1140.0" yPosition="1013.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HitPoints" returnType="int" visibility="public"/>
+        <Method name="ManaPoints" returnType="int" visibility="public"/>
+        <Method name="ExperiencePoints" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Paladin" package="arpg.classes" visibility="public" xPosition="174.0" yPosition="950.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HitPoints" returnType="int" visibility="public"/>
+        <Method name="ManaPoints" returnType="int" visibility="public"/>
+        <Method name="ExperiencePoints" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rogue" package="arpg.classes" visibility="public" xPosition="656.0" yPosition="1000.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="HitPoints" returnType="int" visibility="public"/>
+        <Method name="ManaPoints" returnType="int" visibility="public"/>
+        <Method name="ExperiencePoints" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="IClass" package="arpg.classes" visibility="public" xPosition="1019.0" yPosition="297.0">
+      <Methods>
+        <Method name="HitPoints" returnType="int" visibility="package"/>
+        <Method name="ManaPoints" returnType="int" visibility="package"/>
+        <Method name="ExperiencePoints" returnType="int" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="arpg.classes.AMage" target="arpg.classes.IClass"/>
+    <IsRelation name="is" source="arpg.classes.Rogue" target="arpg.classes.AMelee"/>
+    <IsRelation name="is" source="arpg.classes.Paladin" target="arpg.classes.AMelee"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="arpg.classes.ARanged" target="arpg.classes.IClass"/>
+    <IsRelation name="is" source="arpg.classes.ElementalMage" target="arpg.classes.AMage"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="arpg.classes.AMelee" target="arpg.classes.IClass"/>
+    <IsRelation name="is" source="arpg.classes.Alchemist" target="arpg.classes.ARanged"/>
+    <IsRelation name="is" source="arpg.classes.Archer" target="arpg.classes.ARanged"/>
+    <IsRelation name="is" source="arpg.classes.LifeMage" target="arpg.classes.AMage"/>
+    <IsRelation name="is" source="arpg.classes.Knight" target="arpg.classes.AMelee"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
